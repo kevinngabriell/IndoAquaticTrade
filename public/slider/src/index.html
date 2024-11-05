@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>画像スライダー</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="pt-5 pb-5">
+            <h1 class="text-3xl font-bold">
+                画像スライダー
+            </h1>
+        </header>
+        <h3>１ページ５枚：カルーセルなし</h3>
+        <div class="isystk-slider zoom-slider" data-shift="5" data-carousel="false" style=" width: 872px;" >
+            <div class="view-layer ml-8" style="overflow-x: auto;">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/movie1_sd.jpg" alt="写真3" class="zoom js-movie" 
+                             data-movie="./assets/movies/movie1.mp4" data-playtime="0:20"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/movie2_sd.jpg" alt="写真5" class="zoom js-movie"
+                            data-movie="./assets/movies/movie2.mp4" data-playtime="0:04"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo6.jpg" alt="写真6" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo7.jpg" alt="写真7" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo8.jpg" alt="写真8" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo9.jpg" alt="写真9" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo10.jpg" alt="写真10" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo11.jpg" alt="写真11" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo12.jpg" alt="写真12" class="zoom" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <p class="page-no"></p>
+                <ul class="paging dot">
+                </ul>
+            </div>
+        </div>
+
+        <h3>１ページ５枚：カルーセルあり</h3>
+        <div class="isystk-slider zoom-slider" data-shift="5" data-carousel="true" style=" width: 872px;">
+            <div class="view-layer ml-8" >
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo5.jpg" alt="写真5" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo6.jpg" alt="写真6" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo7.jpg" alt="写真7" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo8.jpg" alt="写真8" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo9.jpg" alt="写真9" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo10.jpg" alt="写真10" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo11.jpg" alt="写真11" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo12.jpg" alt="写真12" class="zoom"/>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="page-no"></p>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>１ページ５枚：カルーセルあり、自動スクロール</h3>
+        <div class="isystk-slider zoom-slider" data-shift="5" data-carousel="true" data-auto-slide="true" style=" width: 872px;" >
+            <div class="view-layer ml-8" >
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo5.jpg" alt="写真5" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo6.jpg" alt="写真6" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo7.jpg" alt="写真7" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo8.jpg" alt="写真8" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo9.jpg" alt="写真9" class="zoom" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo10.jpg" alt="写真10" class="zoom" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <p class="page-no"></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>１ページ３枚：カルーセルあり</h3>
+        <div class="isystk-slider zoom-slider" data-shift="3" data-carousel="true" style=" width: 550px;" >
+            <div class="view-layer ml-8" style="width: 480px">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo5.jpg" alt="写真5" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo6.jpg" alt="写真6" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo7.jpg" alt="写真7" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo8.jpg" alt="写真8" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo9.jpg" alt="写真9" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo10.jpg" alt="写真10" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo11.jpg" alt="写真11" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo12.jpg" alt="写真12" class="zoom"/>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <p class="page-no"></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>１ページ１枚：カルーセルなし</h3>
+        <div class="isystk-slider" data-shift="1" data-responsive="true" style="max-width: 410px; margin: auto">
+            <div class="view-layer-responsive">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1"/>
+                    </li>
+                    <li class="child w-full">
+                        <img src="./assets/images/photo2.jpg" alt="写真2"/>
+                    </li>
+                    <li class="child w-full">
+                        <img src="./assets/images/movie1_sd.jpg" alt="写真3" class="js-movie modal-play"
+                             data-movie="./assets/movies/movie1.mp4" data-playtime="0:20"/>
+                    </li>
+                    <li class="child w-full">
+                        <img src="./assets/images/photo4.jpg" alt="写真4"/>
+                    </li>
+                    <li class="child w-full">
+                        <img src="./assets/images/photo5.jpg" alt="写真5"/>
+                    </li>
+                </ul>
+            </div>
+            <ul class="paging row">
+                <li class="col" data-page-no="1">
+                    <img src="./assets/images/photo1.jpg" alt="写真1" width="80px" />
+                </li>
+                <li class="col" data-page-no="2">
+                    <img src="./assets/images/photo2.jpg" alt="写真2" width="80px"  />
+                </li>
+                <li class="col" data-page-no="3">
+                    <img src="./assets/images/movie1_sd.jpg" alt="写真3" width="80px" class="js-movie"
+                         data-movie="./assets/movies/movie1.mp4" data-playtime="0:20"/>
+                </li>
+                <li class="col" data-page-no="4">
+                    <img src="./assets/images/photo4.jpg" alt="写真4" width="80px"  />
+                </li>
+                <li class="col" data-page-no="5">
+                    <img src="./assets/images/photo5.jpg" alt="写真5" width="80px"  />
+                </li>
+            </ul>
+        </div>
+
+        <h3>スマホ向け：カルーセルあり、スワイプ可</h3>
+        <div class="isystk-slider" data-shift="1" data-carousel="true" data-swipe="true" data-responsive="true" >
+            <div class="view-layer-responsive">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo5.jpg" alt="写真5" width="100%" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="page-no"></p>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>１ページ５枚：カルーセルあり（縦方向）</h3>
+        <div class="isystk-slider zoom-slider-vertical" data-shift="5" data-carousel="true" data-vertical="true" 
+             style="height: 643px; width: 236px;">
+            <div class="view-layer-vertical ml-8" style=" width: 175px;">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/movie1_sd.jpg" alt="写真3" class="zoom js-movie"
+                             data-movie="./assets/movies/movie1.mp4" data-playtime="0:20"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/movie2_sd.jpg" alt="写真5" class="zoom js-movie"
+                             data-movie="./assets/movies/movie2.mp4" data-playtime="0:04"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo6.jpg" alt="写真6" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo7.jpg" alt="写真7" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo8.jpg" alt="写真8" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo9.jpg" alt="写真9" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo10.jpg" alt="写真10" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo11.jpg" alt="写真11" class="zoom"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo12.jpg" alt="写真12" class="zoom"/>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="page-no"></p>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>スマホ向け：カルーセルあり、スワイプ可（縦方向）</h3>
+        <div class="isystk-slider" data-shift="1" data-carousel="true" data-swipe="true" data-responsive="true" data-vertical="true">
+            <div class="view-layer-responsive" style="height: 350px;" >
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo4.jpg" alt="写真4" width="100%" />
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo5.jpg" alt="写真5" width="100%" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="page-no"></p>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <ul class="paging dot"></ul>
+            </div>
+        </div>
+
+        <h3>動的なページの追加</h3>
+        <div class="isystk-slider" data-shift="3" data-carousel="true" style="width: 550px;" >
+            <p class="ml-8">
+                このページの
+                <button
+                        class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow addPrevBtn"
+                >
+                    前に追加
+                </button>
+                <button
+                        class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow addAfterBtn"
+                >
+                    後に追加
+                </button>
+            </p>
+            <div class="view-layer ml-8" style="width: 480px">
+                <ul class="parent">
+                    <li class="child">
+                        <img src="./assets/images/photo1.jpg" alt="写真1"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo2.jpg" alt="写真2"/>
+                    </li>
+                    <li class="child">
+                        <img src="./assets/images/photo3.jpg" alt="写真3"/>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="next-btn"><a href="#"><img src="./assets/images/btn-next.svg" alt="次へ"></a></p>
+                <p class="prev-btn"><a href="#"><img src="./assets/images/btn-prev.svg" alt="前へ"></a></p>
+                <p class="page-no"></p>
+                <ul class="paging dot"></ul>
+            </div>
+            <ul class="addData" style="display: none">
+                <li class="child">
+                    <img src="./assets/images/photo4.jpg" alt="写真4"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo5.jpg" alt="写真5"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo6.jpg" alt="写真6"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo7.jpg" alt="写真7"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo8.jpg" alt="写真8"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo9.jpg" alt="写真9"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo10.jpg" alt="写真10"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo11.jpg" alt="写真11"/>
+                </li>
+                <li class="child">
+                    <img src="./assets/images/photo12.jpg" alt="写真12"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
